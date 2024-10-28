@@ -624,21 +624,14 @@ a {
 }
 
 
-.latest-reviews .star-rating {
+.star-rating {
     color: #FFD700; /* Gold color for stars */
 }
 
-.latest-reviews .star-rating i {
+.star-rating i {
     cursor: pointer; /* Change cursor to pointer on hover */
     font-size: 1.5rem; /* Increase star size */
 }
-
-/* Optional: Style for hover effect on stars */
-.latest-reviews .star-rating i:hover,
-.latest-reviews .star-rating i:hover ~ i {
-    color: #FFD700; /* Gold color on hover */
-}
-
 
 
 
@@ -926,4 +919,145 @@ footer svg {
 footer h5 {
     font-size: 1.2rem; /* Heading size */
     margin-bottom: 15px; /* Spacing below headings */
+}
+
+
+
+/* hero-about  */
+.hero-about .hero-overlay .container{
+    margin-top: 0;
+}
+
+/* hero-detail-course */
+.hero-detail-course{
+    padding:50px 0;
+
+}
+
+.hero-detail-course .title-hero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 70px;
+}
+
+.hero-detail-course .title-hero p{
+    color:#666;    
+    line-height: var(--line-height);
+}
+
+
+
+.hero-detail-course .title-hero img{
+    width: 150px;
+}
+
+.hero-detail-course .title-hero .star-rating{
+    margin-right: 20px;
+
+}
+
+.hero-detail-course .info-course h2{
+    margin: 50px 0;
+    color: var(--main2-color);
+}
+
+.hero-detail-course .info-course p{
+    line-height: 2;
+    color:#333;
+}
+
+
+.hero-detail-course .features-box ul li{
+    margin: 50px 0;
+}
+
+
+.hero-detail-course .features-box h3{
+    color: var(--main2-color);
+}
+
+.hero-detail-course .features-box ul svg{
+    margin-right: 10px;
+    color:var(--main2-color);
+}
+
+@media (max-width: 768px) {
+    .hero-detail-course .title-hero{
+        display: block;
+        text-align: center;
+    }
+
+    .hero-detail-course .title-hero h1{
+        margin: 50px 0;
+    }
+}
+
+
+
+
+
+
+.trial-booking-form {
+    padding: 100px 0;
+    background-color: var(--background-color);
+}
+
+
+.trial-booking-form .logo-section .logo {
+    max-width: 250px;
+}
+
+
+.trial-booking-form .logo-section p {
+    margin-top: 30px;
+    color: var(--main2-color);
+}
+
+.trial-booking-form .form-group input, .trial-booking-form .form-group select {
+    margin-bottom: 10px;
+}
+
+.trial-booking-form .submit-button {
+    background-color: var(--main-color) !important;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 15px;
+}
+
+
+
+.review-form {
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.281);
+}
+
+.review-form h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #444;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.1em;
 }
