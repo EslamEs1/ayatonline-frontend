@@ -13,7 +13,7 @@
 :root {
     --main-color: #1A1D42;
     --main2-color: #206B94; 
-    --background-color: #F1F4F6; 
+    --background-color: #e7f6ff; 
     --accentary-bg-color: #223843;
     --main-transition: 0.3s;
     --main-padding-top: 40px;
@@ -77,7 +77,7 @@ a {
 
 /* General navbar styling */
 .navbar {
-    background-color: var(--background-color);
+     background-color: #f8f9fa;
     z-index: 1030; /* Keeps navbar above other content */
 }
 
@@ -544,6 +544,7 @@ a {
     color: white;
     line-height: var(--line-height);
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -1060,4 +1061,171 @@ footer h5 {
     padding: 10px 20px;
     border: none;
     font-size: 1.1em;
+}
+
+
+.the-logo{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.the-logo img{
+    max-width: 100%;
+}
+
+
+.posts{
+    background-color: var(--background-color);
+    padding: 80px 20px;
+
+}
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 articles per row */
+    gap: 20px;
+}
+
+.article {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #fff;
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    transition: var(--main-transition);
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.article:hover {
+    transform: scale(1.1);
+}
+
+.article-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.article-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #00a6ff !important;
+    transition: var(--main-transition);
+
+}
+
+.article-title:hover{
+    color: var(--main2-color) !important;
+
+}
+
+.article-category {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.article-description {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.page-title{
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: var(--background-color);
+    margin: 0;
+
+}
+
+.page-title h1{
+    color: var(--main2-color);
+}
+
+
+/* Medium screens (two articles per row) */
+@media (max-width: 992px) {
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small screens (one article per row) */
+@media (max-width: 600px) {
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.pagination {
+    justify-content: center; /* Center-aligns the pagination */
+    padding-top:50px;
+}
+
+.page-link {
+    color: var(--main2-color); /* Custom color for pagination numbers */
+}
+
+.page-link:hover {
+    color: darken(var(--main2-color), 10%); /* Darkens on hover (optional) */
+}
+
+
+
+/* contact-info */
+.contact-info{
+    padding:50px 0;
+}
+
+
+
+.contact-info .col-md-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact-info svg{
+    font-size: 30px;
+    color:var(--main2-color);
+}
+
+.contact-info .info{
+    margin-left: 20px;
+    border-bottom: 2px solid var(--accentary-bg-color);
+    padding:30px 0;
+
+}
+
+
+.contact-info .info svg{
+    margin: 5px;
+    font-size: 20px;
+    transition: var(--transition);
+}
+
+.contact-info .info svg:hover{
+    color:var(--accentary-bg-color);
+}
+
+
+.background-wight{
+    background-color: white;
+}
+
+.background-wight label{
+    font-weight: 400;
+}
+
+.form-section{
+    color: var(--main2-color);
 }
